@@ -40,8 +40,8 @@
             <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
           </svg>
         </a>
-      </nav>
-    </div>
+    </nav>
+  </div>
     <div class="sidebar-bottom">
       <a href="https://github.com/Sunil56224972/hallucination-Hunter" target="_blank" class="sidebar-link" title="GitHub Repository">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
@@ -54,22 +54,18 @@
   <!-- Main -->
   <div class="main-wrapper">
 
-    <!-- ═══════════ ANALYZER VIEW ═══════════ -->
     <section class="view active" id="view-analyzer">
       <header class="page-header">
         <div class="page-header-left">
           <h1 class="page-title">Hallucination Hunter</h1>
           <p class="page-subtitle">Claim-level fact verification for AI-generated text</p>
         </div>
-        <div class="page-header-right">
-          </div>
-        </div>
       </header>
 
       <!-- Analyzer Sub-Tabs -->
       <div class="tabs-bar" id="analyzer-tabs">
         <button class="tab active" data-subtab="verify">Verify text</button>
-        </div>
+      </div>
 
       <!-- Sub-tab: Verify text -->
       <div class="subtab-content active" id="subtab-verify">
@@ -100,12 +96,10 @@
           <div class="input-card">
             <div class="textarea-wrap">
               <textarea id="llm-input" placeholder="Paste AI-generated text here..." spellcheck="false"></textarea>
-              
             </div>
             <div class="input-bar">
               <span class="char-indicator"><span id="char-count">0</span> chars</span>
               <div class="input-actions">
-                
                 <button class="btn-text" id="btn-clear">Clear</button>
                 <button class="btn-text" id="btn-example">Load<span class="btn-label-full"> example</span></button>
                 <button class="btn-solid" id="btn-analyze">
@@ -141,7 +135,6 @@
             <span class="progress-pct" id="progress-pct">0%</span>
           </div>
         </div>
-
         <!-- Results -->
         <div class="results hidden" id="results">
           <div class="results-toolbar">
@@ -154,7 +147,11 @@
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 Copy
               </button>
-              </div>
+              <button class="action-btn" id="btn-share" title="Share analysis">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                Share
+              </button>
+            </div>
           </div>
           <div class="summary-row">
             <div class="summary-pill"><span class="pill-num" id="s-total">0</span><span class="pill-label">claims</span></div>
@@ -199,8 +196,8 @@
           </div>
         </div>
       </div>
-
-
+      </div>
+    </section>
 
     <!-- ═══════════ HISTORY VIEW ═══════════ -->
     <section class="view" id="view-history">
@@ -290,8 +287,8 @@
       </div>
     </section>
 
+  </div>
 
-  <!-- Tooltip -->
   <div class="tip hidden" id="tip">
     <div class="tip-head"><span class="tip-status"></span><span class="tip-conf"></span></div>
     <div class="tip-body"></div>
@@ -300,7 +297,6 @@
 
   <!-- Toast notifications -->
   <div class="toast-container" id="toast-container"></div>
-  <!-- Mobile Bottom Nav (visible only on mobile) -->
 
   <script src="config.js"></script>
   <script src="app.js"></script>
